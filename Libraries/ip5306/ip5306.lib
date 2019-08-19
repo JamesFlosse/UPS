@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 5306
+# ip5306
 #
-DEF 5306 U 0 40 Y Y 1 F N
+DEF ip5306 U 0 40 Y Y 1 F N
 F0 "U" 50 -100 50 H V C CNN
-F1 "5306" -150 -100 50 H V C CNN
+F1 "ip5306" -150 -100 50 H V C CNN
 F2 "" 350 -300 50 V I C CNN
 F3 "" 350 -300 50 V I C CNN
 DRAW
