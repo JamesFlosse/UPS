@@ -1,0 +1,7 @@
+Reference, Value, Footprint, Datasheet
+"U1","CW2015","",""
+"R2","100","","~"
+"R1","470","","~"
+"C2","1µf","","~"
+"C1","1µf","","~"
+"J1","Raspberry_Pi_2_3","","https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf"
