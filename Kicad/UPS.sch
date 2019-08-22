@@ -207,8 +207,6 @@ Wire Wire Line
 	4350 5650 4650 5650
 Wire Wire Line
 	4650 5650 4650 5850
-Text Label 4000 5950 0    50   ~ 0
-GND
 $Comp
 L Device:C C5
 U 1 1 5D5BFFD4
@@ -341,7 +339,7 @@ F 1 "1UH" H 4700 5574 50  0000 C CNN
 F 2 "" H 4700 5450 50  0001 C CNN
 F 3 "~" H 4700 5450 50  0001 C CNN
 	1    4700 5450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5150 5150 5450 5150
@@ -400,8 +398,6 @@ Wire Wire Line
 Connection ~ 5500 6150
 Wire Wire Line
 	5500 6150 5500 6400
-Text Label 5500 6400 0    50   ~ 0
-GND
 Wire Wire Line
 	4350 5550 5600 5550
 Wire Wire Line
@@ -438,8 +434,6 @@ F 3 "~" H 5850 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5850 5800
-Text Label 5850 6400 0    50   ~ 0
-GND
 $Comp
 L Device:C C10
 U 1 1 5D5F047D
@@ -567,10 +561,8 @@ F 1 "INDUCTOR" H 7900 2124 50  0000 C CNN
 F 2 "" H 7900 2000 50  0001 C CNN
 F 3 "~" H 7900 2000 50  0001 C CNN
 	1    7900 2000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
-Text Label 7700 2000 2    50   ~ 0
-VIN
 Wire Wire Line
 	7700 2100 8000 2100
 $Comp
@@ -757,8 +749,6 @@ Wire Wire Line
 Connection ~ 2450 2150
 Wire Wire Line
 	7700 2900 7700 2400
-Text GLabel 6450 4850 2    50   Input ~ 0
-+5V
 Text GLabel 6450 5150 2    50   Input ~ 0
 GND
 Text GLabel 7550 5450 2    50   Input ~ 0
@@ -771,10 +761,6 @@ Text GLabel 5050 7250 0    50   Input ~ 0
 GND
 Text GLabel 1350 3900 1    50   Input ~ 0
 GND
-Text GLabel 4450 1950 2    50   Input ~ 0
-SDA
-Text GLabel 4450 2050 2    50   Input ~ 0
-SCL
 Wire Wire Line
 	4450 1950 4300 1950
 Wire Wire Line
@@ -883,5 +869,263 @@ GND
 Text GLabel 8200 1800 0    50   Input ~ 0
 GND
 Text GLabel 8200 1900 0    50   Input ~ 0
++5V
+$Comp
+L Connector:Conn_01x03_Female J6
+U 1 1 5D64920F
+P 10300 4850
+F 0 "J6" H 10328 4876 50  0000 L CNN
+F 1 "Y_CLAW" H 10328 4785 50  0000 L CNN
+F 2 "" H 10300 4850 50  0001 C CNN
+F 3 "~" H 10300 4850 50  0001 C CNN
+	1    10300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J7
+U 1 1 5D649E24
+P 10300 5150
+F 0 "J7" H 10328 5176 50  0000 L CNN
+F 1 "MOTOR_LEFT" H 10328 5085 50  0000 L CNN
+F 2 "" H 10300 5150 50  0001 C CNN
+F 3 "~" H 10300 5150 50  0001 C CNN
+	1    10300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J8
+U 1 1 5D64A0D9
+P 10300 5500
+F 0 "J8" H 10328 5526 50  0000 L CNN
+F 1 "MOTOR_RIGHT" H 10328 5435 50  0000 L CNN
+F 2 "" H 10300 5500 50  0001 C CNN
+F 3 "~" H 10300 5500 50  0001 C CNN
+	1    10300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J9
+U 1 1 5D64A47A
+P 10300 5850
+F 0 "J9" H 10328 5876 50  0000 L CNN
+F 1 "GET_UP_SERVO_LEFT" H 10328 5785 50  0000 L CNN
+F 2 "" H 10300 5850 50  0001 C CNN
+F 3 "~" H 10300 5850 50  0001 C CNN
+	1    10300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 5D64A9DF
+P 10300 4500
+F 0 "J5" H 10328 4526 50  0000 L CNN
+F 1 "X_CLAW" H 10328 4435 50  0000 L CNN
+F 2 "" H 10300 4500 50  0001 C CNN
+F 3 "~" H 10300 4500 50  0001 C CNN
+	1    10300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J10
+U 1 1 5D64B5F4
+P 10300 6200
+F 0 "J10" H 10328 6226 50  0000 L CNN
+F 1 "GET_UP_SERVO_RIGHT" H 10328 6135 50  0000 L CNN
+F 2 "" H 10300 6200 50  0001 C CNN
+F 3 "~" H 10300 6200 50  0001 C CNN
+	1    10300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 5D64BAE9
+P 10300 4150
+F 0 "J4" H 10328 4176 50  0000 L CNN
+F 1 "Y_HEAD_PAN" H 10328 4085 50  0000 L CNN
+F 2 "" H 10300 4150 50  0001 C CNN
+F 3 "~" H 10300 4150 50  0001 C CNN
+	1    10300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5D64BFB5
+P 10300 3800
+F 0 "J3" H 10328 3826 50  0000 L CNN
+F 1 "X_HEAD_PAN" H 10328 3735 50  0000 L CNN
+F 2 "" H 10300 3800 50  0001 C CNN
+F 3 "~" H 10300 3800 50  0001 C CNN
+	1    10300 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 9750 3800 0    50   Input ~ 0
++5V
+Text GLabel 9750 4150 0    50   Input ~ 0
++5V
+Text GLabel 9750 4500 0    50   Input ~ 0
++5V
+Text GLabel 9750 4850 0    50   Input ~ 0
++5V
+Text GLabel 9750 5150 0    50   Input ~ 0
++5V
+Text GLabel 9750 5500 0    50   Input ~ 0
++5V
+Text GLabel 9750 5850 0    50   Input ~ 0
++5V
+Text GLabel 9750 6200 0    50   Input ~ 0
++5V
+Text GLabel 9750 3900 0    50   Input ~ 0
+GND
+Text GLabel 9750 4250 0    50   Input ~ 0
+GND
+Text GLabel 9750 4600 0    50   Input ~ 0
+GND
+Text GLabel 9750 4950 0    50   Input ~ 0
+GND
+Text GLabel 9750 5250 0    50   Input ~ 0
+GND
+Text GLabel 9750 5600 0    50   Input ~ 0
+GND
+Text GLabel 9750 5950 0    50   Input ~ 0
+GND
+Text GLabel 9750 6300 0    50   Input ~ 0
+GND
+Text GLabel 5500 6400 3    50   Input ~ 0
+GND
+Text GLabel 5850 6400 3    50   Input ~ 0
+GND
+Text GLabel 4000 5950 3    50   Input ~ 0
+GND
+Text GLabel 4450 1950 2    50   Input ~ 0
+GPIO02
+Text GLabel 4450 2050 2    50   Input ~ 0
+GPIO03
+Text GLabel 9750 3700 0    50   Input ~ 0
+GPIO05
+Wire Wire Line
+	9750 3700 10100 3700
+Wire Wire Line
+	9750 3800 10100 3800
+Wire Wire Line
+	9750 3900 10100 3900
+Text GLabel 9750 4050 0    50   Input ~ 0
+GPIO06
+Wire Wire Line
+	9750 4050 10100 4050
+Wire Wire Line
+	9750 4150 10100 4150
+Wire Wire Line
+	9750 4250 10100 4250
+Wire Wire Line
+	9750 4500 10100 4500
+Wire Wire Line
+	9750 4600 10100 4600
+Wire Wire Line
+	9750 4850 10100 4850
+Wire Wire Line
+	9750 4950 10100 4950
+Wire Wire Line
+	9750 5150 10100 5150
+Wire Wire Line
+	9750 5250 10100 5250
+Wire Wire Line
+	9750 5500 10100 5500
+Wire Wire Line
+	9750 5850 10100 5850
+Wire Wire Line
+	10100 5600 9750 5600
+Wire Wire Line
+	9750 5950 10100 5950
+Wire Wire Line
+	9750 6200 10100 6200
+Wire Wire Line
+	9750 6300 10100 6300
+Text GLabel 9750 4400 0    50   Input ~ 0
+GPIO07
+Text GLabel 9750 4750 0    50   Input ~ 0
+GPIO08
+Text GLabel 9750 5050 0    50   Input ~ 0
+GPIO26
+Text GLabel 9750 5400 0    50   Input ~ 0
+GPIO27
+Wire Wire Line
+	9750 4750 10100 4750
+Wire Wire Line
+	10100 4400 9750 4400
+Wire Wire Line
+	9750 5050 10100 5050
+Wire Wire Line
+	9750 5400 10100 5400
+Text GLabel 7650 2000 0    50   Input ~ 0
+VIN
+Text GLabel 3600 2250 0    50   Input ~ 0
+GND
+Text GLabel 9750 5750 0    50   Input ~ 0
+GPIO12
+Text GLabel 9750 6100 0    50   Input ~ 0
+GPIO13
+Wire Wire Line
+	10100 5750 9750 5750
+Wire Wire Line
+	10100 6100 9750 6100
+$Comp
+L Connector:Conn_01x05_Female J11
+U 1 1 5D700A91
+P 9200 3900
+F 0 "J11" H 9228 3926 50  0000 L CNN
+F 1 "SPI" H 9228 3835 50  0000 L CNN
+F 2 "" H 9200 3900 50  0001 C CNN
+F 3 "~" H 9200 3900 50  0001 C CNN
+	1    9200 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 3800 0    50   Input ~ 0
+GPIO09
+Text GLabel 8650 3900 0    50   Input ~ 0
+GPIO10
+Text GLabel 8650 4000 0    50   Input ~ 0
+GPIO11
+Wire Wire Line
+	9000 3800 8650 3800
+Wire Wire Line
+	9000 3900 8650 3900
+Wire Wire Line
+	9000 4000 8650 4000
+$Comp
+L Connector:Conn_01x04_Female J12
+U 1 1 5D711701
+P 9200 4550
+F 0 "J12" H 9228 4526 50  0000 L CNN
+F 1 "I2C" H 9228 4435 50  0000 L CNN
+F 2 "" H 9200 4550 50  0001 C CNN
+F 3 "~" H 9200 4550 50  0001 C CNN
+	1    9200 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 4650 0    50   Input ~ 0
++3.3V
+Text GLabel 8650 4750 0    50   Input ~ 0
+GND
+Text GLabel 8650 4450 0    50   Input ~ 0
+GPIO02
+Text GLabel 8650 4550 0    50   Input ~ 0
+GPIO03
+Wire Wire Line
+	8650 4450 9000 4450
+Wire Wire Line
+	8650 4550 9000 4550
+Wire Wire Line
+	8650 4650 9000 4650
+Wire Wire Line
+	8650 4750 9000 4750
+Text GLabel 8650 3700 0    50   Input ~ 0
++3.3V
+Text GLabel 8650 4100 0    50   Input ~ 0
+GND
+Wire Wire Line
+	8650 3700 9000 3700
+Wire Wire Line
+	8650 4100 9000 4100
+Text GLabel 6450 4850 2    50   Output ~ 0
 +5V
 $EndSCHEMATC
