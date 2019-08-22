@@ -87,39 +87,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 1450 1250 1450
 Connection ~ 2450 1450
-$Comp
-L Connector:Raspberry_Pi_2_3 J2
-U 1 1 5D5AFDE6
-P 6400 2150
-F 0 "J2" H 6400 3631 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 6400 3540 50  0000 C CNN
-F 2 "" H 6400 2150 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6400 2150 50  0001 C CNN
-	1    6400 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 3450 6100 3450
-Connection ~ 6100 3450
-Wire Wire Line
-	6100 3450 6200 3450
-Connection ~ 6200 3450
-Wire Wire Line
-	6200 3450 6300 3450
-Connection ~ 6300 3450
-Wire Wire Line
-	6300 3450 6400 3450
-Connection ~ 6400 3450
-Wire Wire Line
-	6400 3450 6500 3450
-Connection ~ 6500 3450
-Wire Wire Line
-	6500 3450 6600 3450
-Connection ~ 6600 3450
-Wire Wire Line
-	6600 3450 6700 3450
-Wire Wire Line
-	6400 3450 6400 3650
 Wire Notes Line
 	750  1150 1300 1150
 Wire Notes Line
@@ -591,10 +558,6 @@ Wire Wire Line
 	5850 7250 5850 7400
 Text Label 8900 1800 0    50   ~ 0
 GND
-Text Label 8200 1800 2    50   ~ 0
-GND
-Text Label 8200 1900 2    50   ~ 0
-EN
 $Comp
 L pspice:INDUCTOR L1
 U 1 1 5D624777
@@ -679,8 +642,6 @@ Wire Wire Line
 	8250 2700 8250 2650
 Wire Wire Line
 	9100 2700 9100 2000
-Text Label 8000 3150 3    50   ~ 0
-GND
 Wire Wire Line
 	8000 3050 8000 3150
 Connection ~ 8000 3050
@@ -751,8 +712,6 @@ Wire Wire Line
 Connection ~ 9900 2450
 Wire Wire Line
 	10550 2050 10550 2650
-Text Label 9900 2650 2    50   ~ 0
-GND
 Wire Wire Line
 	8900 2100 9900 2100
 Connection ~ 9900 2100
@@ -784,24 +743,6 @@ Text GLabel 1050 5150 2    50   Input ~ 0
 NC
 Text GLabel 1050 5250 2    50   Input ~ 0
 NC
-Text GLabel 6550 750  1    50   Input ~ 0
-+3.3V
-Text GLabel 6250 700  1    50   Input ~ 0
-+5V
-Wire Wire Line
-	6500 850  6550 850 
-Wire Wire Line
-	6200 850  6250 850 
-Wire Wire Line
-	6250 850  6250 700 
-Connection ~ 6250 850 
-Wire Wire Line
-	6250 850  6300 850 
-Wire Wire Line
-	6550 850  6550 750 
-Connection ~ 6550 850 
-Wire Wire Line
-	6550 850  6600 850 
 Wire Wire Line
 	1250 2550 2450 2550
 Wire Wire Line
@@ -838,20 +779,109 @@ Wire Wire Line
 	4450 1950 4300 1950
 Wire Wire Line
 	4450 2050 4300 2050
-Text GLabel 7350 1550 2    50   Input ~ 0
-SDA
-Text GLabel 7350 1650 2    50   Input ~ 0
-SCL
-Wire Wire Line
-	7350 1550 7200 1550
-Wire Wire Line
-	7350 1650 7200 1650
-Text GLabel 6400 3650 3    50   Input ~ 0
-GND
 Text GLabel 5900 6950 0    50   Input ~ 0
 VOUT
 Wire Wire Line
 	5900 6950 6000 6950
 Wire Wire Line
 	6000 6950 6000 7000
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J2
+U 1 1 5D5EA04E
+P 6350 1800
+F 0 "J2" H 6400 2917 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 6400 2826 50  0000 C CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "~" H 6350 1800 50  0001 C CNN
+	1    6350 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 900  0    50   Input ~ 0
++3.3V
+Text GLabel 6650 900  2    50   Input ~ 0
++5V
+Text GLabel 6650 1000 2    50   Input ~ 0
++5V
+Text GLabel 6650 1100 2    50   Input ~ 0
+GND
+Text GLabel 6650 1200 2    50   Input ~ 0
+GPIO14
+Text GLabel 6650 1300 2    50   Input ~ 0
+GPIO15
+Text GLabel 6650 1400 2    50   Input ~ 0
+GPIO18
+Text GLabel 6650 1500 2    50   Input ~ 0
+GND
+Text GLabel 6650 1600 2    50   Input ~ 0
+GPIO23
+Text GLabel 6650 1700 2    50   Input ~ 0
+GPIO24
+Text GLabel 6650 1800 2    50   Input ~ 0
+GND
+Text GLabel 6650 1900 2    50   Input ~ 0
+GPIO25
+Text GLabel 6650 2000 2    50   Input ~ 0
+GPIO08
+Text GLabel 6650 2100 2    50   Input ~ 0
+GPIO07
+Text GLabel 6650 2200 2    50   Input ~ 0
+ID_SC
+Text GLabel 6650 2300 2    50   Input ~ 0
+GND
+Text GLabel 6650 2400 2    50   Input ~ 0
+GPIO12
+Text GLabel 6650 2500 2    50   Input ~ 0
+GND
+Text GLabel 6650 2600 2    50   Input ~ 0
+GPIO16
+Text GLabel 6650 2700 2    50   Input ~ 0
+GPIO20
+Text GLabel 6650 2800 2    50   Input ~ 0
+GPIO21
+Text GLabel 6150 2800 0    50   Input ~ 0
+GND
+Text GLabel 6150 2700 0    50   Input ~ 0
+GPIO26
+Text GLabel 6150 2600 0    50   Input ~ 0
+GPIO19
+Text GLabel 6150 2500 0    50   Input ~ 0
+GPIO13
+Text GLabel 6150 2400 0    50   Input ~ 0
+GPIO06
+Text GLabel 6150 2300 0    50   Input ~ 0
+GPIO05
+Text GLabel 6150 2200 0    50   Input ~ 0
+ID_SD
+Text GLabel 6150 2100 0    50   Input ~ 0
+GND
+Text GLabel 6150 2000 0    50   Input ~ 0
+GPIO11
+Text GLabel 6150 1900 0    50   Input ~ 0
+GPIO09
+Text GLabel 6150 1800 0    50   Input ~ 0
+GPIO10
+Text GLabel 6150 1700 0    50   Input ~ 0
++3.3V
+Text GLabel 6150 1600 0    50   Input ~ 0
+GPIO22
+Text GLabel 6150 1500 0    50   Input ~ 0
+GPIO27
+Text GLabel 6150 1400 0    50   Input ~ 0
+GPIO17
+Text GLabel 6150 1300 0    50   Input ~ 0
+GND
+Text GLabel 6150 1200 0    50   Input ~ 0
+GPIO04
+Text GLabel 6150 1100 0    50   Input ~ 0
+GPIO03
+Text GLabel 6150 1000 0    50   Input ~ 0
+GPIO02
+Text GLabel 8000 3150 3    50   Input ~ 0
+GND
+Text GLabel 9900 2650 3    50   Input ~ 0
+GND
+Text GLabel 8200 1800 0    50   Input ~ 0
+GND
+Text GLabel 8200 1900 0    50   Input ~ 0
++5V
 $EndSCHEMATC

@@ -87,10 +87,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 1450 1250 1450
 Connection ~ 2450 1450
-Text Label 4300 1950 0    50   ~ 0
-SDA
-Text Label 4300 2050 0    50   ~ 0
-SCL
 $Comp
 L Connector:Raspberry_Pi_2_3 J2
 U 1 1 5D5AFDE6
@@ -102,10 +98,6 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    6400 2150
 	1    0    0    -1  
 $EndComp
-Text Label 7200 1550 0    50   ~ 0
-SDA
-Text Label 7200 1650 0    50   ~ 0
-SCL
 Wire Wire Line
 	6000 3450 6100 3450
 Connection ~ 6100 3450
@@ -128,8 +120,6 @@ Wire Wire Line
 	6600 3450 6700 3450
 Wire Wire Line
 	6400 3450 6400 3650
-Text Label 6400 3650 0    50   ~ 0
-GND
 Wire Notes Line
 	750  1150 1300 1150
 Wire Notes Line
@@ -364,8 +354,6 @@ Wire Wire Line
 Connection ~ 1350 4100
 Wire Wire Line
 	1350 4100 1500 4100
-Text Label 1350 3900 0    50   ~ 0
-GND
 Wire Wire Line
 	1500 4850 1500 4400
 Wire Wire Line
@@ -572,8 +560,6 @@ F 3 "~" H 5300 7400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5150 7400 5150 7250
-Text Label 5050 7250 3    50   ~ 0
-GND
 Wire Wire Line
 	5050 7250 5150 7250
 Connection ~ 5150 7250
@@ -603,8 +589,6 @@ Wire Wire Line
 Connection ~ 5850 7250
 Wire Wire Line
 	5850 7250 5850 7400
-Text Label 6000 7000 2    50   ~ 0
-VOUT
 Text Label 8900 1800 0    50   ~ 0
 GND
 Text Label 8200 1800 2    50   ~ 0
@@ -842,4 +826,32 @@ Text GLabel 1250 1450 0    50   Input ~ 0
 BATT+
 Text GLabel 1250 2550 0    50   Input ~ 0
 GND
+Text GLabel 5050 7250 0    50   Input ~ 0
+GND
+Text GLabel 1350 3900 1    50   Input ~ 0
+GND
+Text GLabel 4450 1950 2    50   Input ~ 0
+SDA
+Text GLabel 4450 2050 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	4450 1950 4300 1950
+Wire Wire Line
+	4450 2050 4300 2050
+Text GLabel 7350 1550 2    50   Input ~ 0
+SDA
+Text GLabel 7350 1650 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	7350 1550 7200 1550
+Wire Wire Line
+	7350 1650 7200 1650
+Text GLabel 6400 3650 3    50   Input ~ 0
+GND
+Text GLabel 5900 6950 0    50   Input ~ 0
+VOUT
+Wire Wire Line
+	5900 6950 6000 6950
+Wire Wire Line
+	6000 6950 6000 7000
 $EndSCHEMATC
