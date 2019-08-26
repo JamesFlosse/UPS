@@ -849,28 +849,6 @@ F 3 "~" H 10300 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J7
-U 1 1 5D649E24
-P 10300 5200
-F 0 "J7" H 10328 5226 50  0000 L CNN
-F 1 "MOTOR_LEFT" H 10328 5135 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10300 5200 50  0001 C CNN
-F 3 "~" H 10300 5200 50  0001 C CNN
-	1    10300 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J8
-U 1 1 5D64A0D9
-P 10300 5550
-F 0 "J8" H 10328 5576 50  0000 L CNN
-F 1 "MOTOR_RIGHT" H 10328 5485 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10300 5550 50  0001 C CNN
-F 3 "~" H 10300 5550 50  0001 C CNN
-	1    10300 5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x03_Female J9
 U 1 1 5D64A47A
 P 10300 5900
@@ -1083,4 +1061,26 @@ Wire Wire Line
 Connection ~ 2600 5950
 Text GLabel 10550 2650 3    50   Output ~ 0
 +5V
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5D65A7C0
+P 10300 5200
+F 0 "J?" H 10328 5176 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10328 5085 50  0000 L CNN
+F 2 "" H 10300 5200 50  0001 C CNN
+F 3 "~" H 10300 5200 50  0001 C CNN
+	1    10300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5D65B47C
+P 10300 5550
+F 0 "J?" H 10328 5526 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10328 5435 50  0000 L CNN
+F 2 "" H 10300 5550 50  0001 C CNN
+F 3 "~" H 10300 5550 50  0001 C CNN
+	1    10300 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
