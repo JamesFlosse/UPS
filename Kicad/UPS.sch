@@ -39,43 +39,36 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 5D5AA301
-P 2750 1600
-F 0 "R3" H 2820 1646 50  0000 L CNN
-F 1 "470" H 2820 1555 50  0000 L CNN
-F 2 "" V 2680 1600 50  0001 C CNN
-F 3 "~" H 2750 1600 50  0001 C CNN
-	1    2750 1600
+P 2750 1950
+F 0 "R3" H 2820 1996 50  0000 L CNN
+F 1 "470" H 2820 1905 50  0000 L CNN
+F 2 "" V 2680 1950 50  0001 C CNN
+F 3 "~" H 2750 1950 50  0001 C CNN
+	1    2750 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
 U 1 1 5D5AA450
-P 2450 2300
-F 0 "C3" H 2565 2346 50  0000 L CNN
-F 1 "1µf" H 2565 2255 50  0000 L CNN
-F 2 "" H 2488 2150 50  0001 C CNN
-F 3 "~" H 2450 2300 50  0001 C CNN
-	1    2450 2300
+P 2450 2350
+F 0 "C3" H 2565 2396 50  0000 L CNN
+F 1 "1µf" H 2565 2305 50  0000 L CNN
+F 2 "" H 2488 2200 50  0001 C CNN
+F 3 "~" H 2450 2350 50  0001 C CNN
+	1    2450 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5D5AAEF2
-P 2750 1950
-F 0 "C4" H 2865 1996 50  0000 L CNN
-F 1 "1µf" H 2865 1905 50  0000 L CNN
-F 2 "" H 2788 1800 50  0001 C CNN
-F 3 "~" H 2750 1950 50  0001 C CNN
-	1    2750 1950
+P 2750 2350
+F 0 "C4" H 2865 2396 50  0000 L CNN
+F 1 "1µf" H 2865 2305 50  0000 L CNN
+F 2 "" H 2788 2200 50  0001 C CNN
+F 3 "~" H 2750 2350 50  0001 C CNN
+	1    2750 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 1800 2450 1450
-Wire Wire Line
-	2450 1450 2750 1450
-Wire Wire Line
-	2450 1450 1250 1450
-Connection ~ 2450 1450
 Wire Notes Line
 	750  1150 1300 1150
 Wire Notes Line
@@ -626,22 +619,16 @@ NC
 Text GLabel 1050 5250 2    50   Input ~ 0
 NC
 Wire Wire Line
-	1250 2550 2450 2550
-Wire Wire Line
-	2450 2450 2450 2550
-Connection ~ 2450 2550
-Wire Wire Line
 	2450 2100 2450 2150
 Wire Wire Line
 	3600 2150 2450 2150
-Connection ~ 2450 2150
 Wire Wire Line
 	7700 2900 7700 2400
 Text GLabel 6450 5150 2    50   Input ~ 0
 GND
 Text GLabel 7550 5450 2    50   Input ~ 0
 BATT+
-Text GLabel 1250 1450 0    50   Input ~ 0
+Text GLabel 1250 1800 0    50   Input ~ 0
 BATT+
 Text GLabel 1250 2550 0    50   Input ~ 0
 GND
@@ -834,21 +821,11 @@ GND
 Text GLabel 10550 2650 3    50   Output ~ 0
 VOUT
 Wire Wire Line
-	2450 2550 2750 2550
-Wire Wire Line
-	2750 1750 2750 1800
-Wire Wire Line
-	2750 2100 2750 2550
-Connection ~ 2750 2550
-Wire Wire Line
-	2750 2550 3950 2550
+	2750 2100 2750 2200
 Wire Wire Line
 	3600 2050 3050 2050
 Wire Wire Line
 	3050 2050 3050 1800
-Wire Wire Line
-	3050 1800 2750 1800
-Connection ~ 2750 1800
 Text GLabel 4300 2150 2    50   Input ~ 0
 GND
 Text GLabel 4300 2250 2    50   Input ~ 0
@@ -1014,4 +991,27 @@ F 3 "~" H 11050 4850 50  0001 C CNN
 	1    11050 4850
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2750 2550 2750 2500
+Connection ~ 2750 2550
+Wire Wire Line
+	2750 2550 3950 2550
+Wire Wire Line
+	2750 1800 3050 1800
+Wire Wire Line
+	1250 2550 2450 2550
+Wire Wire Line
+	2450 2500 2450 2550
+Connection ~ 2450 2550
+Wire Wire Line
+	2450 2550 2750 2550
+Wire Wire Line
+	2450 2200 2450 2150
+Connection ~ 2450 2150
+Wire Wire Line
+	1250 1800 2450 1800
+Wire Wire Line
+	2450 1800 2750 1800
+Connection ~ 2450 1800
+Connection ~ 2750 1800
 $EndSCHEMATC
